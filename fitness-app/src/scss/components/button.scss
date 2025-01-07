@@ -1,0 +1,8 @@
+.button{
+    background-color:rgb(233, 40, 40) ;
+    border-radius: 6px;
+    padding: 10px 10px;
+    @include u.breakpoint(mediumPlus) {
+        padding: 13px 25px;
+      }
+}

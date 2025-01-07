@@ -1,0 +1,17 @@
+.programCard{
+    display:flex ;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    text-align: left;
+    background-color: rgb(87, 84, 80);
+    &__heading{
+        padding-top: 10px;
+    }
+
+}
+
+@include u.breakpoint(mediumPlus) {
+    .programCard{
+    }
+}

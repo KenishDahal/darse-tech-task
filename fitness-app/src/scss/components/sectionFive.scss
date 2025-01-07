@@ -1,0 +1,61 @@
+.sectionFive {
+  background-color: rgb(30, 29, 28);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 20px;
+  padding: 40px 50px; /* Padding 20px left and right */
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .button{
+      margin-top: 20px;
+    }
+  }
+  &__picture {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    width: 100%;
+    @include u.breakpoint(small) {
+        display: none;
+      }
+    figure {
+      margin: 0; /* Remove default margins from the <figure> element */
+      width: 500px;
+      height: 500px;
+    }
+
+    img {
+      max-width: 300px; /* Ensure image scales properly */
+      height: auto; /* Maintain aspect ratio */
+      @include u.breakpoint(mediumPlus) {
+        width: 400px;
+        height: 500px;
+      }
+    }
+  }
+}
+
+@include u.breakpoint(mediumPlus) {
+  .sectionFive {
+    flex-direction: row;
+    padding: 70px 100px; /* Padding 20px left and right */
+    gap: 40px;
+    &__text {
+      flex-direction: column;
+      gap: 10px;
+      width: 50%;
+      justify-content: end;
+      .h5 {
+        padding-bottom: 15px;
+      }
+    }
+    &__picture {
+        width: 50%;
+        justify-content: right; /* Center horizontally */
+        // display: inline-block;
+        display: flex;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.planCard {
+  background-color: rgb(103, 103, 103);
+  padding: 30px 45px;
+  width: 30%;
+  border-radius: 20px;
+  transition: transform 0.1s; /* Animation */
+  &:hover {
+    background-color: rgb(255, 106, 0);
+    transform: scale(1.15);
+  }
+  &__heading {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .price {
+    padding-bottom: 30px;
+    text-align: left;
+    font-size: 50px;
+    letter-spacing: 0.3rem;
+  }
+  .body{
+    letter-spacing: 0.09rem;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    .check {
+      padding-right: 15px;
+    }
+  }
+  .button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    margin-top: 20px;
+    border: 1px solid white;
+  }
+}

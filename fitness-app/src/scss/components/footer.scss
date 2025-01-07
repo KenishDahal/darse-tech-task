@@ -1,0 +1,42 @@
+.footer{
+    display: flex;
+    // flex-direction: column;
+    background-color: rgb(50, 49, 49);
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 40px 50px ;
+    color: rgb(178, 178, 178);
+    &__section{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &__title{
+            padding-top: 30px;
+            color: white;
+        }
+        input{
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding: 5px 5px;
+            // borde: '25px';   
+        }
+    }
+}
+
+@include u.breakpoint(mediumPlus) {
+    .footer {
+        padding: 70px 100px ;
+        &__section{
+            gap: 20px;
+            &__title{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            input{
+                padding: 15px 15px;
+                // borde: '25px';   
+            }
+        }
+    }
+}

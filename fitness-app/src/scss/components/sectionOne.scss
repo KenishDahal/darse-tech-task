@@ -1,0 +1,94 @@
+.sectionOne {
+  background-color: rgb(40, 40, 39);
+  display: flex;
+  margin: 0;
+  padding-inline: 50px;
+  padding-top: 20px;
+  margin-top: -1px;
+  &__tag {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    &__click {
+      display: flex;
+      gap: 1.5rem;
+      text-align: center;
+      align-items: center;
+      padding: 5px 0;
+      .hey {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: flex; /* Enable Flexbox */
+        justify-content: center; /* Center horizontally */
+        align-items: center;
+        background-color: rgb(78, 75, 75);
+        .arrow {
+          width: 60%;
+          height: 60%;
+        }
+      }
+    }
+    &__trainee {
+      display: flex;
+      gap: 1.5rem;
+      .number{
+        display: flex;
+        flex-direction: column;
+      }
+      .numbers{
+        position: relative;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+       :after {
+          content: ""; /* Necessary for pseudo-elements */
+          position: absolute;
+          top: 10%; /* Adjust to position the smaller border vertically */
+          right: 0%; /* Align to the right edge */
+          height: 80%; /* Make the border smaller */
+          border-right: 2px solid silver; /* Define the border style, color, and thickness */
+        }
+      }
+    }
+  }
+  figure {
+    width: 50%;
+    height: 50%;
+    margin-left: -100px;
+    position: relative;
+    z-index: 1;
+    @include u.breakpoint(mediumPlus) {
+      margin: 0;
+    }
+  }
+  img {
+    width: 150px;
+    height: 350px;
+    @include u.breakpoint(mediumPlus) {
+      width: 300px;
+      height: 650px;
+    }
+  }
+}
+
+@include u.breakpoint(mediumPlus) {
+  .sectionOne {
+    padding-inline: 100px;
+    padding-top: 10px;
+    &__tag {
+      &__click {
+        padding: 20px 0;
+        .hey {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+}

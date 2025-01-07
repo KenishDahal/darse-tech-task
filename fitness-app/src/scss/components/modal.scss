@@ -1,0 +1,15 @@
+.modal{
+    background-color: rgb(185, 11, 11);
+    text-align: right;
+    &--form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 30px;
+        button{
+            padding: 5px 15px;
+            border-radius: 5px;
+            border: 1px solid red;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@use "./util/breakpoints" as u;
+@import "./globals/typo";
+
+// // components
+@import "./components/button";
+@import "./components/header";
+@import "./components/sectionOne.scss";
+@import "./components/sectionTwo.scss";
+@import "./components/sectionThree.scss";
+@import "./components/sectionFour.scss";
+@import "./components/sectionFive.scss";
+@import "./components/planCard.scss";
+@import "./components/sectionSix.scss";
+@import "./components/modal.scss";
+
+@import "./components/programCard.scss";
+@import "./components/footer.scss";
